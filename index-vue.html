@@ -32,7 +32,7 @@
             </div>
             
             <div class="selector">
-              <select class="sele-sc">
+              <select v-model="genreSel" @change="getfilteredApi" class="sele-sc">
                 <option v-for="option in genres">{{option}}</option>
               </select> 
               <select v-model="authorSel" @change="getfilteredApi"  class="sele-sc">

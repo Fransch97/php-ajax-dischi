@@ -29,6 +29,7 @@ const app = new Vue({
         },
 
         getfilteredApi(){
+            console.log(this.genreSel)
             if(!(this.authorSel === "all") && !(this.genreSel === "all")){
                 const parimi = {
                     author : this.authorSel ,
@@ -41,6 +42,8 @@ const app = new Vue({
                     this.discs = r.data
                     console.log(r.data)
                 })
+            console.log("funziono qua1")
+
             }else if(!(this.authorSel === "all") && this.genreSel === "all"){
                 const parimi = {
                     author : this.authorSel 
@@ -52,7 +55,9 @@ const app = new Vue({
                     this.discs = r.data
                     console.log(r.data)
                 })
-            }else if(!(this.authorSel === "all") && this.genreSel === "all"){
+            console.log("funziono qua2")
+
+            }else if(this.authorSel === "all" &&!( this.genreSel === "all")){
                 const parimi = {
                     genre : this.genreSel 
                 }
@@ -63,7 +68,12 @@ const app = new Vue({
                     this.discs = r.data
                     console.log(r.data)
                 })
-            }
+            console.log("funziono qua3")
+
+            }else{
+                this.getApi()
+            console.log("funziono qua4")
+        }
             
         }
 

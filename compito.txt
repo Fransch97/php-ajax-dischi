@@ -1,0 +1,14 @@
+Esercizio di oggi:
+cartella/repo php-ajax-dischi
+Stampare a schermo i dischi presenti nelle vostra vecchia esercitazione vue-discs
+Utilizzare:
+Html, CSS, VueJS (con CDN non CLI), axios, PHP
+
+**Seconda Milestone:**
+Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, attraverso una chiamata api, i dischi a php e li stamperà attraverso vue CDN.
+Questo file lo chiamate index-vue.html che chiamerà via axios un file che si chiamerà api.php.
+api.php includerà lo stesso “database” che viene incluso anche in index.php
+**Bonus:**
+Attraverso la select dei generi filtrare i generi selezionati tramite le chiamate API
+benvenuti nel magico mondo full-stack! :linguaccia_occhiolino:
+NB: ricordatevi di lanciare il file index-vue.html dal server PHP e non dal server node generato da VSCode

@@ -33,10 +33,10 @@
             
             <div class="selector">
               <select class="sele-sc">
-                <option >genere</option>
+                <option v-for="option in genres">{{option}}</option>
               </select> 
-              <select class="sele-sc">
-                <option>artista</option>
+              <select v-model="authorSel" @change="getfilteredApi"  class="sele-sc">
+                <option  v-for="author in authors" :value="author" >{{author}}</option>
             
               </select>
             </div>
